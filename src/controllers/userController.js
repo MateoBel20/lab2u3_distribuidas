@@ -1,5 +1,5 @@
 // src/controllers/userController.js
-const { User } = require('../models');
+const { User } = require('../models/User');
 
 const createUser = async (req, res) => {
   try {

@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
-const apiRouter = require('./routes/api');
+const apiRouter = require('./routes/users.router');
 
 const app = express();
 
