@@ -1,6 +1,6 @@
 // src/models/User.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database'); // Asegúrate de que esta ruta sea correcta
+const sequelize = require('../config/database');
 
 const User = sequelize.define('User', {
   nombre: {
@@ -17,8 +17,8 @@ const User = sequelize.define('User', {
     allowNull: false,
   },
 }, {
-  tableName: 'Users', // Nombre de la tabla en la base de datos
-  timestamps: true,   // Habilita createdAt y updatedAt
+  tableName: 'Users',
+  timestamps: true,
 });
 
 module.exports = User;
