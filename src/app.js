@@ -12,8 +12,10 @@ app.use(helmet());
 app.use(express.json());
 
 app.use('/api', apiRouter);
-
-const PORT = process.env.PORT || 3000;
+app.get("/", (req, res) => {
+  res.send("¡Backend en producción funciona!");
+});
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
